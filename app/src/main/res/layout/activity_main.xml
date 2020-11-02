@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/design_default_color_primary"
+        app:tabTextColor="@color/white">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open_schedule" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/close_schedule" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <EditText
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="9dp"
+        android:autofillHints=""
+        android:background="@drawable/bg_search"
+        android:ems="10"
+        android:hint="@string/search"
+        android:inputType="textPersonName"
+        android:padding="15dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="387dp"
+        android:layout_height="317dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:layout_editor_absoluteY="471dp">
+
+        <Button
+            android:id="@+id/ScheduleButton"
+            android:layout_width="386dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="159dp"
+            android:layout_marginEnd="164dp"
+            android:background="@drawable/bg_search"
+            android:text="Create Adhoc Schedule"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="227dp"
+            android:text="Last Sync date : 01/01/20 "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ScheduleButton" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="19dp"
+            android:text="T-1000000000000AA"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/ScheduleButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

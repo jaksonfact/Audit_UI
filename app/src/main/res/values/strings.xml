@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Audit_UI</string>
+    <string name="inventory_audit">INVENTORY AUDIT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="audit_type">Audit Type :</string>
+    <string name="audit">Audit</string>
+    <string name="call_lml">Call LML</string>
+    <string name="warehouse_name">Warehouse Name :</string>
+    <string name="schedule_date">Schedule Date :</string>
+    <string name="hub_name">Hub Name :</string>
+    <string name="open_schedule">Open Schedule</string>
+    <string name="close_schedule">Close Schedule</string>
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
+</resources>
